@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <script>
+     
+
+function square()
+{
+var a=document.getElementById('value').value;
+
+ a=parseInt(a);
+
+ c=a*a;
+document.getElementById('result').textContent=c;  
+
+}
+
+function cube()
+{
+    var a=document.getElementById('value').value;
+    a= parseInt(a);
+    b=a*a*a;
+    document.getElementById('result').textContent=b;
+}
+
+function fourth()
+{
+    var a=document.getElementById('value').value;
+    a= parseInt(a);
+    d=a*a*a*a;
+    document.getElementById('result').textContent=d;
+}
+
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" name="value" id="value"> <br>
+     
+
+    <input type="button" name="square" id="square" value="Square" onclick="square()">
+    <input type="button" name="cube" id="cube" value="Cube" onclick="cube()">
+    <input type="button" name="fourth" id="fourth" value="Fourth" onclick="fourth()"> 
+
+    <p id="result"></p>
+</body>
+</html>
